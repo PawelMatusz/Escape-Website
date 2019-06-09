@@ -1,26 +1,12 @@
 .header {
-    width: 100%;
-    line-height: 41px;
     position: absolute;
     top: 40px;
     left: 0;
     right: 0;
+    @include h3;
 
     .wrapper {
         display: flex;
         justify-content: space-between;
     }
-
-    .navbar-list {
-        width: 50%;
-        display: flex;
-
-        & li {
-            padding-left: 30px;
-            font-size: 18px;
-            line-height: 41px;
-        }
-    }
-
-
 }

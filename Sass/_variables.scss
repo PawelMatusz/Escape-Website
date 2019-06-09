@@ -1,0 +1,26 @@
+// fonts
+$font-family: 'Montserrat',
+'sans-serif';
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+
+// color
+$color-white: #FFFFFF;
+$color-black: #222222;
+$color-blue: #748CCA;
+
+$bgc-footer: $color-blue;
+$menu-link-hover: $color-blue;
+
+
+// typography
+
+$font-size-h1: 6.5rem;
+$line-height-h1: (64 / 65); // (line height / font size)
+
+$font-size-h2: 3rem;
+$line-height-h2: (42 / 30);
+
+$font-size-h3: 2rem;
+$line-height-h3: (30 / 20);

@@ -1,0 +1,40 @@
+@mixin h1 {
+    font-size: $font-size-h1;
+    line-height: $line-height-h1;
+}
+
+@mixin h2 {
+    font-size: $font-size-h2;
+    line-height: $line-height-h2;
+}
+
+@mixin h3 {
+    font-size: $font-size-h3;
+    line-height: $line-height-h3;
+}
+
+// button mixin
+
+@mixin button {
+    min-width: 240px;
+    min-height: 64px;
+    color: $color-white;
+    background-color: transparent;
+    border: 2px solid $color-white;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    @include h3;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    // &:hover {
+    //     background-color: $color-white;
+    //     color: $color-black;
+    // }
+}
+
+@mixin flex($justify, $align) {
+    justify-content: $justify;
+    align-content: $align
+}

@@ -1,7 +1,33 @@
 .home {
     min-height: 80vh;
+    display: flex;
     background-image: url(../img/Image.png);
-    // background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
+
+    .wrapper {
+
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: $color-white;
+
+        .home__head {
+            margin-top: 140px;
+            margin-bottom: 30px;
+
+            @include h2;
+
+            &--big {
+                @include h1;
+                font-weight: 700;
+            }
+        }
+
+        .button {
+            @include button;
+        }
+    }
 }

@@ -1,0 +1,17 @@
+//OSOBNY KURWA!!!!
+
+.navbar {
+    &__list {
+        min-width: 400px;
+        display: flex;
+        justify-content: space-around;
+        color: $color-white;
+        @include h3;
+    }
+
+    &--rwd {
+        .navbar__list {
+            display: block;
+        }
+    }
+}
