@@ -6,7 +6,7 @@
         display: flex;
         justify-content: space-around;
         color: $color-white;
-        @include h3;
+        @include h4;
     }
 
     &--rwd {

@@ -13,6 +13,12 @@
     line-height: $line-height-h3;
 }
 
+@mixin h4 {
+    font-size: $font-size-h4;
+    line-height: $line-height-h4;
+}
+
+
 // button mixin
 
 @mixin button {
