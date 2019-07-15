@@ -9,6 +9,7 @@ $font-family: 'Montserrat',
 $color-white: #FFFFFF;
 $color-black: #222222;
 $color-blue: #748CCA;
+$color-gray: #FAFAFA;
 
 $bgc-footer: $color-blue;
 $menu-link-hover: $color-blue;
@@ -19,11 +20,14 @@ $menu-link-hover: $color-blue;
 $font-size-h1: 6.5rem;
 $line-height-h1: (64 / 65); // (line height / font size)
 
-$font-size-h2: 3rem;
+$font-size-h2: 4rem;
 $line-height-h2: (42 / 30);
 
 $font-size-h3: 2rem;
 $line-height-h3: (30 / 20);
 
 $font-size-h4: 1.5rem;
-$line-height-h4: (20 / 15)
+$line-height-h4: (20 / 15);
+
+$font-size-h5: 1.2rem;
+$line-height-h5: (15 / 12);
