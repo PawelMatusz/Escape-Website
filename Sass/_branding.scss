@@ -5,6 +5,12 @@
     justify-content: center;
     align-items: center;
 
+    &__photo {
+        align-self: center;
+        width: 222px;
+        height: 237px;
+    }
+
     &__container {
         display: flex;
         justify-content: space-around;
@@ -18,16 +24,11 @@
         justify-content: space-around;
         font-family: $font-family;
 
-        &__header {
+        &-header {
             @include h2
         }
 
     }
 
-    &__photo {
-        align-self: center;
-        width: 222px;
-        height: 237px;
-    }
 
 }

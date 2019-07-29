@@ -19,14 +19,14 @@
 
 
 
-        &__header {
+        &-header {
             @include h2
         }
     }
 
 
 
-    &__photo {
+    &-photo {
         align-self: center;
         width: 222px;
         height: 237px;

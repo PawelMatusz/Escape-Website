@@ -1,3 +1,5 @@
+// font mixins
+
 @mixin h1 {
     font-size: $font-size-h1;
     line-height: $line-height-h1;
@@ -43,6 +45,58 @@
     //     color: $color-black;
     // }
 }
+
+// mixin media-queries
+@mixin breakpoint($point) {
+    @if $point==desktop {
+        @media screen and (min-width: 1440px) {
+            @content;
+        }
+    }
+
+    @else if $point==laptop {
+        @media screen and (max-width: 1439px) {
+            @content;
+        }
+    }
+
+    @else if $point==tablet {
+        @media screen and (max-width: 1279px) {
+            @content;
+        }
+    }
+
+    @else if $point==portrait {
+        @media screen and (max-width: 1023px) {
+            @content;
+        }
+    }
+
+    @else if $point==phablet {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $point==mobile {
+        @media screen and (max-width: 519px) {
+            @content;
+        }
+    }
+
+    @else if $point==narrow {
+        @media screen and (max-width: 374px) {
+            @content;
+        }
+    }
+}
+
+// @include breakpoint(mobile) {
+//     font-size: 30px;
+// }
+
+
+
 
 @mixin flex($justify, $align) {
     justify-content: $justify;
