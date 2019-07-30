@@ -1,7 +1,29 @@
 .skills {
-    width: 590px;
+    width: 470px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    margin-top: 25px;
 
+
+    &__content {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 30px;
+        @include h5
+    }
+
+    &__header {
+        font-weight: bold;
+        margin-bottom: 10px;
+        @include h4;
+    }
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
