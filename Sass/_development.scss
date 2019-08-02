@@ -1,5 +1,5 @@
 .development {
-    min-height: 70vh;
+    min-height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,17 +10,21 @@
     }
 
     &__content {
-        @include h5;
-        width: 50%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         font-family: $font-family;
+        color: $color-gray-font;
+        @include h5;
+        word-spacing: 5px;
+        line-height: 20px;
 
 
 
         &-header {
-            @include h2
+            @include h2;
+            color: $color-black;
         }
     }
 

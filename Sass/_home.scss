@@ -1,5 +1,5 @@
 .home {
-    min-height: 80vh;
+    min-height: 81vh;
     display: flex;
     background-image: url(../img/Image.png);
     background-position: center;
@@ -18,11 +18,11 @@
             margin-top: 140px;
             margin-bottom: 30px;
 
-            @include h2;
+            @include h3;
 
             &--big {
                 @include h1;
-                font-weight: 700;
+                font-weight: bold;
             }
         }
 

@@ -8,10 +8,4 @@
         color: $color-white;
         @include h4;
     }
-
-    &--rwd {
-        .navbar__list {
-            display: block;
-        }
-    }
 }
