@@ -1,1 +1,9 @@
-.footer {}
+.footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: $color-white;
+    @include h4;
+    text-align: center;
+}

@@ -39,11 +39,17 @@
     border-radius: 3px;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: .5s .1s ease;
 
-    // &:hover {
-    //     background-color: $color-white;
-    //     color: $color-black;
-    // }
+    &:hover {
+        background-color: $color-white;
+        color: $color-black;
+        transform: scale(1.1)
+    }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 // mixin media-queries

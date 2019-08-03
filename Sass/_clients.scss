@@ -24,8 +24,9 @@
 
     &__description {
         position: relative;
-        margin-top: 55px;
         display: flex;
+        margin-top: 55px;
+        margin-bottom: 30px;
 
         &-content {
             position: relative;
@@ -87,7 +88,7 @@
         &-container {
             display: flex;
             justify-content: space-around;
-            margin: 20px auto;
+            margin: 10px auto;
             padding: 40px 0;
         }
     }
