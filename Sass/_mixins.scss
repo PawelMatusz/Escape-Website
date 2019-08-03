@@ -28,8 +28,10 @@
 // button mixin
 
 @mixin button {
+    display: block;
     min-width: 240px;
     min-height: 64px;
+    padding: .65em;
     color: $color-white;
     background-color: transparent;
     border: 2px solid $color-white;
@@ -39,7 +41,7 @@
     border-radius: 3px;
     letter-spacing: 2px;
     cursor: pointer;
-    transition: .5s .1s ease;
+    transition: .5s .1s;
 
     &:hover {
         background-color: $color-white;
@@ -47,9 +49,9 @@
         transform: scale(1.1)
     }
 
-    &:focus {
-        outline: none;
-    }
+    // &:focus {
+    //     outline: none;
+    // }
 }
 
 // mixin media-queries

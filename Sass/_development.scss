@@ -7,6 +7,7 @@
     &__container {
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
 
     &__content {
@@ -25,15 +26,20 @@
         &-header {
             @include h2;
             color: $color-black;
+            margin-bottom: .5em;
+        }
+
+        &-paragraph {
+            &:not(:last-child) {
+                margin-bottom: 1em;
+            }
         }
     }
 
 
 
     &-photo {
-        align-self: center;
-        width: 222px;
-        height: 237px;
+        max-width: 275px;
     }
 
 }

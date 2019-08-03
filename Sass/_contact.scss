@@ -1,5 +1,43 @@
 .contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     position: relative;
+    display: flex;
+    justify-content: center;
     min-height: 80vh;
     background-color: $color-blue;
+    color: white;
+
+    &__container {
+        display: flex;
+
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__header {
+        @include h2;
+    }
+
+    &__social {
+        columns: 2 auto;
+
+
+        &-item {
+            height: 3em;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            @include h4;
+
+        }
+
+        &-icon {
+            padding-right: 5px;
+        }
+    }
 }

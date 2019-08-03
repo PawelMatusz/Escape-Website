@@ -6,14 +6,13 @@
     background-color: $color-gray;
 
     &__photo {
-        width: 222px;
-        height: 237px;
-        align-self: center;
+        max-width: 275px;
     }
 
     &__container {
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
 
     &__content {
@@ -29,7 +28,14 @@
 
         &-header {
             @include h2;
+            margin-bottom: .5em;
             color: $color-black;
+        }
+
+        &-paragraph {
+            &:not(:last-child) {
+                margin-bottom: 1em;
+            }
         }
 
     }

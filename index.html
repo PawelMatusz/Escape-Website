@@ -17,11 +17,11 @@
             <img src="img/Logo.png" alt="" class="logo">
             <nav class="navbar">
                 <ul class="navbar__list">
-                    <li><a href="#home1">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#clients">Clients</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="link" class="" href="#home1">Home</a></li>
+                    <li><a class="link" class="" href="#services">Services</a></li>
+                    <li><a class="link" class="" href="#clients">Clients</a></li>
+                    <li><a class="link" class="" href="#team">Team</a></li>
+                    <li><a class="link" class="" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,7 +31,39 @@
             <div class="wrapper">
                 <h1 class="home__head">Can you build the website of my dreams?</h1>
                 <h1 class="home__head--big">YUP, WE CAN DO THAT.</h1>
-                <button class="button">Learn More</button>
+                <a class="button" href="#" target="_blank">Learn More</a>
+                <!-- <p class="home__more">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur
+                    expedita
+                    quaerat ut doloribus provident nostrum dolorem quia debitis accusantium, temporibus eligendi ratione
+                    hic voluptas tempora aspernatur nisi! Doloremque, eaque temporibus?
+                    Enim praesentium distinctio illo, facere voluptatibus itaque perspiciatis earum eligendi, vel
+                    mollitia dolor ipsam fugiat aliquam. Repellat enim cumque placeat ea itaque natus harum alias, qui
+                    hic quae voluptas molestiae?
+                    Vitae quas, laboriosam molestias perspiciatis reiciendis quos, facilis repudiandae debitis eos
+                    fugiat impedit velit, quisquam aspernatur est assumenda mollitia illum aliquam consequuntur ipsam
+                    eius odio enim quaerat. Optio, error quod!
+                    Consequatur accusantium expedita dicta culpa eaque officia sequi omnis debitis ut laboriosam amet,
+                    cum delectus, libero quibusdam magnam fuga earum facilis nam minus placeat explicabo perferendis
+                    praesentium alias. Voluptatibus, est.
+                    Rem aliquam doloremque a, commodi ipsam earum aliquid pariatur, praesentium perferendis possimus
+                    quas doloribus nulla voluptatibus laudantium. Assumenda necessitatibus ducimus facere voluptatum,
+                    eum similique labore? Beatae accusantium possimus nemo sit?
+                    Hic inventore, commodi, fugiat enim atque voluptatibus quasi praesentium minus dicta reiciendis
+                    adipisci molestiae amet tenetur consectetur architecto vitae rerum, distinctio maiores nostrum
+                    dolorem! Optio amet obcaecati sint ullam veniam!
+                    Illo sunt quidem ratione voluptas deleniti magnam ea laudantium, quas incidunt vel sit voluptatem
+                    necessitatibus, labore eveniet nobis minima nesciunt voluptatibus impedit alias eligendi, reiciendis
+                    vitae consequatur debitis laboriosam. Architecto?
+                    Autem maxime, quis mollitia aut eum vero cupiditate laudantium sint aliquid distinctio saepe
+                    obcaecati suscipit! Non, minima rerum numquam maxime at quibusdam consequuntur itaque animi delectus
+                    commodi quisquam ab dolorum!
+                    Facilis tempore tempora doloribus perspiciatis repellendus, ratione hic maiores corrupti amet
+                    aliquam saepe recusandae autem necessitatibus. Rem, ipsum ab, neque optio tempora itaque expedita
+                    quibusdam eos praesentium iusto perferendis beatae!
+                    Sequi ad itaque voluptatibus delectus quae laboriosam odio, expedita doloremque tenetur culpa
+                    repellat atque labore dicta officiis iure omnis mollitia nulla ut sit vero totam voluptatem ipsam
+                    at. Illo, saepe.</!--> -->
             </div>
         </section>
         <section id="services" class="services">
@@ -39,11 +71,14 @@
                 <div class="development__container wrapper">
                     <section class="development__content">
                         <h2 class="development__content-header">Web <span class="bold">Development</span></h2>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                        <p class="development__content-paragraph">Proin iaculis purus consequat sem cure digni ssim.
+                            Donec
+                            porttitora entum suscipit aenean
                             rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec
                             porttitora entum suscipit.</p>
 
-                        <p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                        <p class="development__content-paragraph">Iaculis purus consequat sem cure digni ssim. Donec
+                            porttitora entum suscipit aenean
                             rhoncus
                             posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim.</p>
                     </section>
@@ -61,7 +96,7 @@
                             Donec
                             porttitora entum suscipit.</p>
 
-                        <p class="branding__content-paragraph2"> Iaculis purus consequat sem cure digni ssim. Donec
+                        <p class="branding__content-paragraph"> Iaculis purus consequat sem cure digni ssim. Donec
                             porttitora entum suscipit aenean
                             rhoncus
                             posuere odio in tincidunt. Proin iaculis purus consequat.</p>
@@ -166,30 +201,33 @@
                 <p class="team__paragraph-first">These wonderful people make work enjoyable</p>
                 <div class="team__people">
                     <article class="person">
-                        <img class="person__photo" class="" src="img/client-photo.png" alt="">
+                        <div class="person__photo"></div>
                         <h3 class="person__name">Kimberly Thompson</h3>
                         <h4 class="person__role">Marketer</h4>
                         <div class="person__social">
-                            <img class="person__social-icon" src="img/twitter.png" alt="">
-                            <img class="person__social-icon" src="img/facebook.png" alt="">
-                            <img class="person__social-icon" src="img/printerest.png" alt=""></div>
+                            <a class="link" href=""><img class="person__social-icon" src="img/twitter.png" alt=""></a>
+                            <a class="link" href=""><img class="person__social-icon" src="img/facebook.png" alt=""></a>
+                            <a class="link" href=""><img class="person__social-icon" src="img/printerest.png" alt=""></a>
+                        </div>
                     </article>
                     <article class="person">
-                        <img class="person__photo" class="" src="img/client-photo.png" alt="">
+                        <div class="person__photo"></div>
                         <h3 class="person__name">Rico Massimo</h3>
                         <h4 class="person__role">Coder</h4>
                         <div class="person__social">
-                            <img class="person__social-icon" src="img/twitter.png" alt="">
-                            <img class="person__social-icon" src="img/facebook.png" alt="">
-                            <img class="person__social-icon" src="img/google.png" alt=""></div>
+                            <a class="link" href=""><img class="person__social-icon" src="img/twitter.png" alt=""></a>
+                            <a class="link" href=""><img class="person__social-icon" src="img/facebook.png" alt=""></a>
+                            <a class="link" href=""><img class="person__social-icon" src="img/google.png" alt=""></a>
+                        </div>
                     </article>
                     <article class="person">
-                        <img class="person__photo" class="" src="img/client-photo.png" alt="">
+                        <div class="person__photo"></div>
                         <h3 class="person__name">Uku Mason</h3>
                         <h4 class="person__role">Graphic Designer</h4>
                         <div class="person__social">
-                            <img class="person__social-icon" src="img/facebook.png" alt="">
-                            <img class="person__social-icon" src="img/printerest.png" alt=""></div>
+                            <a class="link" href=""><img class="person__social-icon" src="img/facebook.png" alt=""></a>
+                            <a class="link" href=""><img class="person__social-icon" src="img/printerest.png" alt=""></a>
+                        </div>
                     </article>
                 </div>
                 <p class="team__paragraph-second">Proin iaculis purus consequat sem cure digni ssim donec porttitora
@@ -198,33 +236,30 @@
             </div>
         </section>
         <section id="contact" class="contact">
-            <div class="wrapper">
+            <div class="contact__container wrapper">
                 <article class="contact__description">
-                    <h2 class="contact__header">Say Hello</h2>
+                    <h2 class="contact__header">Say <span class="bold">Hello </span></h2>
                     <p class="contact__pargraph">Don't be shy, drop us an email and say hello! We are a really nice
                         bunch off people :)</p>
                     <section class="contact__social">
-                        <a href=""><img src="img/Mobile-Icon.png" alt="">(416) 555-0000</a>
-                        <a href=""><img src="img/Mail-Icon.png" alt="">hello@escape.com</a>
-                        <a href=""><img src="img/Twitter-Icon.png" alt="">@escape</a>
-                        <a href=""><img src="img/Facebook-Icon.png" alt="">facebook.com/escape</a>
-                        <a href=""><img src="img/Google+-Icon.png" alt="">plus.com/escape</a>
-                        <a href=""><img src="img/Pinterest-Icon.png" alt="">pinterest.com/escape</a>
+                        <a class="link contact__social-item" href="#"><img class="contact__social-icon" src="img/Mobile-Icon.png" alt="">(416) 555-0000</a>
+                        <a class="link contact__social-item"  href="#"><img class="contact__social-icon" src="img/Mail-Icon.png" alt="">hello@escape.com</a>
+                        <a class="link contact__social-item"  href="#"><img class="contact__social-icon" src="img/Twitter-Icon.png" alt="">@escape</a>
+                        <a class="link contact__social-item"  href="#"><img class="contact__social-icon" src="img/Facebook-Icon.png" alt="">facebook.com/escape</a>
+                        <a class="link contact__social-item"  href="#"><img class="contact__social-icon" src="img/Google+-Icon.png" alt="">plus.com/escape</a>
+                        <a class="link contact__social-item"  href="#"><img class="contact__social-icon" src="img/Pinterest-Icon.png" alt="">pinterest.com/escape</a>
                     </section>
                 </article>
-                <form action="">
-                    <input type="text">
-                    <input type="mail">
-                    <input type="text">
-                </form>
             </div>
-            <footer class="footer">
-                <div class="wrapper"> © 2014 Escape by FreebiesXpress • Made In Toronto</div>
-            </footer>
+
         </section>
     </main>
-
-
+    <footer class="footer">
+        <div class="wrapper">
+            <p class="footer-copyrights">© 2014 Escape by FreebiesXpress • Made In Toronto</p>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

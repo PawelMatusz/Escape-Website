@@ -1,7 +1,9 @@
 .skills {
     width: 470px;
     display: flex;
+    align-items: center;
     margin-top: 25px;
+    opacity: .5;
 
 
     &__content {
@@ -32,4 +34,9 @@
     justify-content: center;
     margin-top: 90px;
     margin-bottom: 90px;
+}
+
+.skill-hovered {
+    opacity: 1;
+    transform: scale(1.1)
 }

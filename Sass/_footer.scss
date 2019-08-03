@@ -1,9 +1,12 @@
 .footer {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    color: $color-white;
-    @include h4;
+    padding-bottom: 1rem;
+    background-color: $color-blue;
+    color: white;
     text-align: center;
+
+    &-copyrights {
+        @include h4;
+        padding-top: 1rem;
+        border-top: 1px solid rgba($color-white, .5);
+    }
 }
