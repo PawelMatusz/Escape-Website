@@ -4,10 +4,11 @@ const navbar = document.querySelector('.navbar')
 
 skills.forEach(function (skill) {
     skill.addEventListener('mouseover', function () {
-        skill.classList.add('skill-hovered');
+        skills.forEach(item => item.classList.add('is-opacified'));
+        this.classList.remove('is-opacified');
     })
     skill.addEventListener('mouseout', function () {
-        skill.classList.remove('skill-hovered');
+        skills.forEach(item => item.classList.remove('is-opacified'));
     })
 })
 

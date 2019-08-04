@@ -1,5 +1,3 @@
-//OSOBNY KURWA!!!!
-
 .navbar {
     &__list {
         min-width: 400px;
@@ -8,14 +6,24 @@
         color: $color-white;
         @include h4;
 
+        @include breakpoint(portrait) {
+            display: none;
+        }
+
     }
 
 
 }
 
-.menu-icon {
+.menu__icon {
     max-width: 20px;
     max-height: 20px;
     display: none;
     cursor: pointer;
+
+    &--open {
+        @include breakpoint(portrait) {
+            display: block;
+        }
+    }
 }

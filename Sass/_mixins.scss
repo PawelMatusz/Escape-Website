@@ -41,17 +41,13 @@
     border-radius: 3px;
     letter-spacing: 2px;
     cursor: pointer;
-    transition: .5s .1s;
+    transition: .6s .2s;
 
     &:hover {
         background-color: $color-white;
         color: $color-black;
         transform: scale(1.1)
     }
-
-    // &:focus {
-    //     outline: none;
-    // }
 }
 
 // mixin media-queries
@@ -102,11 +98,3 @@
 // @include breakpoint(mobile) {
 //     font-size: 30px;
 // }
-
-
-
-
-@mixin flex($justify, $align) {
-    justify-content: $justify;
-    align-content: $align
-}

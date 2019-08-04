@@ -32,19 +32,4 @@
             margin-right: auto
         }
     }
-
-    &__more {
-        visibility: hidden;
-        height: 0;
-        padding: 10px;
-        letter-spacing: 1px;
-        @include h3;
-        transition: 2s .2s ease-in;
-
-        &--active {
-
-            height: 100%;
-            visibility: visible;
-        }
-    }
 }

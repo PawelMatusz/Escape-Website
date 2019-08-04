@@ -34,6 +34,17 @@ a {
     background-color: #FAFAFA;
 }
 
+.link {
+    transition: .5s;
+}
+
 .link:hover {
     opacity: .5;
+}
+
+.logo {
+    @include breakpoint(portrait) {
+        width: 50%;
+        margin-left: 1em;
+    }
 }
