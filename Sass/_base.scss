@@ -1,13 +1,11 @@
-.wrapper {
-    width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-}
-
 html {
     font-size: 10px;
     scroll-behavior: smooth;
     font-family: $font-family;
+}
+
+body {
+    overflow: hidden;
 }
 
 :root,
@@ -15,6 +13,12 @@ html {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 ul {
