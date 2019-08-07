@@ -1,6 +1,6 @@
 const skills = document.querySelectorAll('.skills');
-const menuIcon = document.querySelector('.menu-icon');
-const navbar = document.querySelector('.navbar')
+const menuIcon = document.querySelector('.nav__icon');
+const navbar = document.querySelector('.navbar--mobile')
 
 skills.forEach(function (skill) {
     skill.addEventListener('mouseover', function () {
@@ -12,8 +12,12 @@ skills.forEach(function (skill) {
     })
 })
 
-menuIcon.addEventListener('click', () => {
-    navbar.classList.toggle('navbar--responsive');
-    console.log('cyk fuch')
+menuIcon.addEventListener('click', function () {
+    this.classList.toggle('open');
+    if (this.classList.contains('open')) {
+        navbar.style.display = 'block';
+    } else {
+        navbar.style.display = 'none';
+    }
 
 })
