@@ -18,17 +18,29 @@
     &__header {
         @include h1;
         margin: 0 auto;
+
+        @include breakpoint(portrait) {
+            text-align: center;
+        }
     }
 
     &__paragraph-first {
         @include h4;
         color: $color-gray-font;
         margin: 15px auto 15px auto;
+
+        @include breakpoint(portrait) {
+            text-align: center;
+        }
     }
 
     &__people {
         display: flex;
         justify-content: space-between;
+
+        @include breakpoint(portrait) {
+            display: block;
+        }
 
     }
 
@@ -43,6 +55,7 @@
 .person {
     margin-top: 70px;
     text-align: center;
+
 
     &__name {
         @include h4;
@@ -66,5 +79,9 @@
         height: 216px;
         border: 2px solid white;
         border-radius: 50%;
+
+        @include breakpoint(portrait) {
+            margin: 0 auto;
+        }
     }
 }

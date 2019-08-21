@@ -14,12 +14,20 @@
     &__header {
         @include h1;
         margin: 10px auto;
+
+        @include breakpoint(portrait) {
+            text-align: center;
+        }
     }
 
     &__paragraph {
         @include h3;
         margin: 10px auto;
         color: $color-gray-font;
+
+        @include breakpoint(portrait) {
+            text-align: center;
+        }
     }
 
     &__description {
@@ -28,6 +36,10 @@
         align-items: center;
         margin-top: 55px;
         margin-bottom: 30px;
+
+        @include breakpoint(portrait) {
+            flex-direction: column;
+        }
 
         &-content {
             position: relative;
@@ -43,6 +55,7 @@
             color: $color-gray-font;
             background-color: $color-white;
 
+
             &:nth-child(even)::before {
                 content: '';
                 position: absolute;
@@ -54,6 +67,10 @@
                 border-top: 15px solid transparent;
                 border-right: 23px solid $color-white;
                 border-bottom: 15px solid transparent;
+
+                @include breakpoint(portrait) {
+                    display: none;
+                }
             }
 
             &:nth-child(odd)::before {
@@ -67,11 +84,21 @@
                 border-top: 15px solid transparent;
                 border-left: 23px solid $color-white;
                 border-bottom: 15px solid transparent;
+
+                @include breakpoint(portrait) {
+                    display: none;
+                }
             }
         }
 
         &-photo {
             padding: 10px;
+
+            &:nth-child(2) {
+                @include breakpoint(portrait) {
+                    order: -1;
+                }
+            }
         }
 
         &-person {
@@ -91,6 +118,16 @@
             justify-content: space-around;
             margin: 10px auto;
             padding: 40px 0;
+
+            @include breakpoint(portrait) {
+                flex-wrap: wrap;
+            }
+        }
+
+        &-photo {
+            @include breakpoint(portrait) {
+                padding: 1rem;
+            }
         }
     }
 }

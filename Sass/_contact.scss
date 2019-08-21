@@ -23,11 +23,20 @@
         @include h1;
         text-align: center;
         padding: .8em;
+
+        @include breakpoint(portrait) {
+            padding: 0;
+            padding-bottom: .5em;
+        }
     }
 
     &__social {
         columns: 2 auto;
-        padding: 1em;
+        padding: 1rem;
+
+        @include breakpoint(portrait) {
+            columns: 1 auto;
+        }
 
         &-item {
             height: 3em;
@@ -48,5 +57,9 @@
         @include h4;
         text-align: center;
         padding: .7em;
+
+        @include breakpoint(portrait) {
+            padding: 1em;
+        }
     }
 }
