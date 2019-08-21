@@ -5,6 +5,10 @@
     margin-top: 25px;
     transition: opacity 200ms;
 
+    @include breakpoint(portrait) {
+        width: 320px;
+    }
+
 
     &__content {
         width: 300px;
@@ -15,6 +19,7 @@
         @include h5;
         letter-spacing: 1px;
         word-spacing: 2px;
+
     }
 
     &__header {

@@ -1,13 +1,22 @@
 .development {
-    min-height: 65vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include breakpoint(portrait) {
+        flex-direction: column;
+    }
 
     &__container {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @include breakpoint(portrait) {
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
     }
 
     &__content {
@@ -21,12 +30,23 @@
         word-spacing: 5px;
         line-height: 20px;
 
+        @include breakpoint(portrait) {
+            width: 100%;
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+
 
 
         &-header {
             @include h2;
             color: $color-black;
             margin-bottom: .5em;
+
+            @include breakpoint(portrait) {
+                text-align: center;
+                padding: 2rem;
+            }
         }
 
         &-paragraph {

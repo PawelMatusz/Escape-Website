@@ -2,6 +2,8 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
     font-family: $font-family;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 :root,
@@ -9,6 +11,11 @@ html {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .wrapper {

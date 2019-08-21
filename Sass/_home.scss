@@ -17,12 +17,19 @@
         .home__head {
             margin-top: 140px;
             margin-bottom: 30px;
-
             @include h3;
+
+            @include breakpoint(portrait) {
+                @include h4;
+            }
 
             &--big {
                 @include h1;
                 font-weight: bold;
+
+                @include breakpoint(portrait) {
+                    @include h2;
+                }
             }
         }
 

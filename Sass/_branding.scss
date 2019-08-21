@@ -1,5 +1,5 @@
 .branding {
-    min-height: 65vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,12 +7,18 @@
 
     &__photo {
         max-width: 275px;
+
     }
 
     &__container {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @include breakpoint(portrait) {
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
     }
 
     &__content {
@@ -26,10 +32,23 @@
         word-spacing: 5px;
         line-height: 20px;
 
+        @include breakpoint(portrait) {
+            order: -1;
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 2rem;
+
+        }
+
         &-header {
             @include h2;
             margin-bottom: .5em;
             color: $color-black;
+
+            @include breakpoint(portrait) {
+                text-align: center;
+                padding: 2rem;
+            }
         }
 
         &-paragraph {

@@ -28,7 +28,9 @@
 // button mixin
 
 @mixin button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 240px;
     min-height: 64px;
     padding: .65em;
@@ -47,6 +49,11 @@
         background-color: $color-white;
         color: $color-black;
         transform: scale(1.1)
+    }
+
+    @include breakpoint(portrait) {
+        min-width: 320px;
+        min-height: 100px;
     }
 }
 
