@@ -18,6 +18,10 @@
         @include breakpoint(portrait) {
             text-align: center;
         }
+
+        @include breakpoint(phablet) {
+            @include h2;
+        }
     }
 
     &__paragraph {

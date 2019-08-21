@@ -43,7 +43,7 @@
     border-radius: 3px;
     letter-spacing: 2px;
     cursor: pointer;
-    transition: .6s .2s;
+    transition: .2s;
 
     &:hover {
         background-color: $color-white;
@@ -54,6 +54,11 @@
     @include breakpoint(portrait) {
         min-width: 310px;
         min-height: 90px;
+    }
+
+    @include breakpoint(phablet) {
+        min-width: 220px;
+        min-height: 40px;
     }
 }
 

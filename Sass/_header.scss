@@ -9,4 +9,11 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__logo {
+        @include breakpoint(phablet) {
+            width: 20rem;
+            margin-left: 2rem;
+        }
+    }
 }

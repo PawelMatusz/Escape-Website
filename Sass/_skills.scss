@@ -3,11 +3,17 @@
     display: flex;
     align-items: center;
     margin-top: 25px;
-    transition: opacity 200ms;
+    transition: opacity 300ms 50ms;
 
     @include breakpoint(portrait) {
         width: 320px;
         margin-left: 1rem;
+    }
+
+    &__photo {
+        @include breakpoint(phablet) {
+            width: 8rem;
+        }
     }
 
 
@@ -34,7 +40,7 @@
     }
 
     &.is-opacified {
-        opacity: .5;
+        opacity: .25;
     }
 }
 
@@ -42,8 +48,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .skill-hovered {

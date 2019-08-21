@@ -41,8 +41,8 @@
 .nav__icon {
     overflow: hidden;
     display: none;
-    width: 60px;
-    height: 45px;
+    width: 40px;
+    height: 35px;
     margin-right: 1em;
     position: relative;
     transform: rotate(0deg);
@@ -58,7 +58,7 @@
 .nav__item {
     display: block;
     position: absolute;
-    height: 9px;
+    height: 5px;
     width: 100%;
     background: $color-white;
     border-radius: 9px;
@@ -72,11 +72,11 @@
     }
 
     &:nth-child(2) {
-        top: 18px;
+        top: 10px;
     }
 
     &:nth-child(3) {
-        top: 36px;
+        top: 20px;
     }
 }
 

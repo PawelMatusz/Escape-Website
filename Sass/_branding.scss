@@ -5,9 +5,17 @@
     align-items: center;
     background-color: $color-gray;
 
+    @include breakpoint(portrait) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
     &__photo {
         max-width: 275px;
 
+        @include breakpoint(portrait) {
+            max-width: 150px;
+        }
     }
 
     &__container {
@@ -19,6 +27,7 @@
             flex-direction: column;
             margin-bottom: 1rem;
         }
+
     }
 
     &__content {

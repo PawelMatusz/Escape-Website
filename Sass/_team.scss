@@ -22,6 +22,10 @@
         @include breakpoint(portrait) {
             text-align: center;
         }
+
+        @include breakpoint(phablet) {
+            @include h2;
+        }
     }
 
     &__paragraph-first {
@@ -49,6 +53,10 @@
         padding: 20px;
         @include h3;
         text-align: center;
+
+        @include breakpoint(phablet) {
+            @include h3;
+        }
     }
 }
 
@@ -82,6 +90,12 @@
 
         @include breakpoint(portrait) {
             margin: 0 auto;
+        }
+
+        @include breakpoint(portrait) {
+            width: 164px;
+            height: 164px;
+
         }
     }
 }

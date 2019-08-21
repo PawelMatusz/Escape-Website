@@ -28,6 +28,10 @@
             padding: 0;
             padding-bottom: .5em;
         }
+
+        @include breakpoint(phablet) {
+            @include h2;
+        }
     }
 
     &__social {
@@ -36,6 +40,7 @@
 
         @include breakpoint(portrait) {
             columns: 1 auto;
+            margin: 0 auto;
         }
 
         &-item {
@@ -44,7 +49,6 @@
             align-items: center;
             padding: 3em;
             @include h4;
-
         }
 
 
