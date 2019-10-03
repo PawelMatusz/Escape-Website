@@ -1,9 +1,8 @@
 .contact {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     display: flex;
     justify-content: center;
-    min-height: 80vh;
     background-color: $color-blue;
     color: $color-white;
 
@@ -22,7 +21,6 @@
     &__header {
         @include h1;
         text-align: center;
-        padding: .8em;
 
         @include breakpoint(portrait) {
             padding: 0;
@@ -36,7 +34,7 @@
 
     &__social {
         columns: 2 auto;
-        padding: 1rem;
+        padding: 1em;
 
         @include breakpoint(portrait) {
             columns: 1 auto;
@@ -44,17 +42,11 @@
         }
 
         &-item {
-            height: 3em;
-            display: flex;
-            align-items: center;
-            padding: 3em;
             @include h4;
         }
 
 
-        &-icon {
-            padding-right: .6em;
-        }
+        &-icon {}
     }
 
     &__paragraph {

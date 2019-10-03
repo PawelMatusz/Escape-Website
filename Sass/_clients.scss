@@ -4,29 +4,29 @@
     justify-content: space-between;
     min-height: 970px;
     background-color: $color-gray;
+    padding-top: 10rem;
 
     &__container {
         display: flex;
         flex-direction: column;
-        padding-top: 98px;
     }
 
     &__header {
         @include h1;
-        margin: 10px auto;
+        text-align: center;
 
         @include breakpoint(portrait) {
             text-align: center;
         }
 
         @include breakpoint(phablet) {
-            @include h2;
+            @include h3;
         }
     }
 
     &__paragraph {
-        @include h3;
-        margin: 10px auto;
+        @include h4;
+        text-align: center;
         color: $color-gray-font;
 
         @include breakpoint(portrait) {
@@ -38,8 +38,8 @@
         position: relative;
         display: flex;
         align-items: center;
-        margin-top: 55px;
-        margin-bottom: 30px;
+        margin-top: 5em;
+        margin-bottom: 5em;
 
         @include breakpoint(portrait) {
             flex-direction: column;
@@ -51,11 +51,9 @@
             flex-direction: column;
             justify-content: center;
             align-content: center;
-            padding: 30px;
-            margin: 25px;
-            @include h3;
-            // clip-path: polygon(0% 0%, 85% 0, 85% 45%, 90% 55%, 85% 65%, 85% 100%, 0 100%);
-            // filter: drop-shadow(2px 2px 2px rgba(50, 50, 0, 0.5));
+            padding: 3em;
+            margin: 2.5em;
+            @include h4;
             color: $color-gray-font;
             background-color: $color-white;
 
@@ -96,9 +94,12 @@
         }
 
         &-photo {
-            padding: 10px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: black;
 
-            &:nth-child(2) {
+            &:nth-child(even) {
                 @include breakpoint(portrait) {
                     order: -1;
                 }
@@ -120,6 +121,7 @@
         &-container {
             display: flex;
             justify-content: space-around;
+            align-items: center;
             margin: 10px auto;
             padding: 40px 0;
 

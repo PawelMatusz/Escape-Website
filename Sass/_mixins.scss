@@ -37,18 +37,17 @@
     color: $color-white;
     background-color: transparent;
     border: 2px solid $color-white;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
     @include h3;
-    border-radius: 3px;
-    letter-spacing: 2px;
+    border-radius: .3rem;
     cursor: pointer;
     transition: .2s;
 
     &:hover {
         background-color: $color-white;
         color: $color-black;
-        transform: scale(1.1)
+        transform: scale(1.05)
     }
 
     @include breakpoint(portrait) {

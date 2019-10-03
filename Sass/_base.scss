@@ -5,9 +5,6 @@ html {
     overflow-x: hidden;
     width: 100%;
 
-    @include breakpoint(phablet) {
-        font-size: 8px;
-    }
 }
 
 :root,
@@ -38,7 +35,7 @@ a {
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .grey {

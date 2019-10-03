@@ -1,13 +1,16 @@
 .header {
     position: absolute;
-    top: 50px;
+    top: 40px;
     left: 0;
     right: 0;
-    @include h3;
+    @include h2;
+    z-index: 99;
 
     .wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+
     }
 
     &__logo {

@@ -5,10 +5,11 @@
     align-items: center;
     background-color: black;
     color: white;
-    padding-top: 100px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 
     &__container {
-        min-height: 100vh;
+
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -49,8 +50,7 @@
     }
 
     &__paragraph-second {
-        margin-top: 50px;
-        padding: 20px;
+        padding-top: 4em;
         @include h3;
         text-align: center;
 
@@ -61,31 +61,31 @@
 }
 
 .person {
-    margin-top: 70px;
+    margin-top: 7em;
     text-align: center;
 
 
     &__name {
         @include h4;
         margin: 0 auto;
-        margin-top: 17px;
+        margin-top: 1.7em;
     }
 
     &__role {
         @include h5;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 1em;
     }
 
     &__social-icon {
-        margin-top: 10px;
-        padding: 5px;
+        margin-top: 1em;
+        padding: .5em;
     }
 
     &__photo {
         width: 216px;
         height: 216px;
-        border: 2px solid white;
+        border: 6px solid white;
         border-radius: 50%;
 
         @include breakpoint(portrait) {

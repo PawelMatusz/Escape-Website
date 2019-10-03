@@ -1,23 +1,38 @@
 .home {
-    min-height: 100vh;
+    position: relative;
+    min-height: 63rem;
     display: flex;
     background-image: url(../img/Image.png);
     background-position: center;
     background-size: cover;
 
-    .wrapper {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
 
-        min-height: 50vh;
+
+    .wrapper {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         color: $color-white;
 
+
+
+
         .home__head {
-            margin-top: 140px;
-            margin-bottom: 30px;
+            margin-top: 13rem;
+            margin-bottom: 3rem;
             @include h3;
+            font-weight: 200;
 
             @include breakpoint(portrait) {
                 @include h4;
@@ -25,7 +40,8 @@
 
             &--big {
                 @include h1;
-                font-weight: bold;
+                font-weight: 600;
+                text-transform: uppercase;
 
                 @include breakpoint(portrait) {
                     @include h2;
@@ -39,4 +55,7 @@
             margin-right: auto
         }
     }
+
+
+
 }

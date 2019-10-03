@@ -1,22 +1,10 @@
-.branding {
-    min-height: 60vh;
+.services {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-gray;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 
-    @include breakpoint(portrait) {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-    }
-
-    &__photo {
-        max-width: 275px;
-
-        @include breakpoint(portrait) {
-            max-width: 150px;
-        }
-    }
 
     &__container {
         display: flex;
@@ -31,32 +19,34 @@
     }
 
     &__content {
-        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         font-family: $font-family;
         color: $color-gray-font;
-        @include h5;
-        word-spacing: 5px;
-        line-height: 20px;
+        @include h4;
+        padding: 0 4rem;
+
 
         @include breakpoint(portrait) {
             order: -1;
             width: 100%;
-            padding: 1rem;
             margin-bottom: 2rem;
 
         }
 
         &-header {
-            @include h2;
+            @include h1;
             margin-bottom: .5em;
             color: $color-black;
 
             @include breakpoint(portrait) {
                 text-align: center;
-                padding: 2rem;
+                padding: 1rem;
+            }
+
+            @include breakpoint(phablet) {
+                @include h2;
             }
         }
 
@@ -68,5 +58,7 @@
 
     }
 
-
+    &--even {
+        background-color: $color-gray;
+    }
 }
