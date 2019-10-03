@@ -23,7 +23,7 @@
         flex-direction: column;
         margin-left: 20px;
         margin-top: 30px;
-        @include h5;
+        @include h4;
         word-spacing: 2px;
 
     }
@@ -31,7 +31,7 @@
     &__header {
         font-weight: bold;
         margin-bottom: 10px;
-        @include h4;
+        @include h3;
     }
 
     &__paragraph {
@@ -53,5 +53,5 @@
 
 .skill-hovered {
     opacity: 1;
-    transform: scale(1.1)
+    transform: scale(1.05)
 }

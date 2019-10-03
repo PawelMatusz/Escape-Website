@@ -66,13 +66,13 @@
 
 
     &__name {
-        @include h4;
+        @include h3;
         margin: 0 auto;
         margin-top: 1.7em;
     }
 
     &__role {
-        @include h5;
+        @include h4;
         margin: 0 auto;
         margin-top: 1em;
     }
