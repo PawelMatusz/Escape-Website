@@ -33,8 +33,12 @@
     }
 
     &__social {
-        columns: 2 auto;
-        padding: 1em;
+        padding: 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5em;
+        grid-row-gap: 2em;
 
         @include breakpoint(portrait) {
             columns: 1 auto;
@@ -43,6 +47,13 @@
 
         &-item {
             @include h4;
+            padding: .8em;
+            display: flex;
+            align-items: center;
+        }
+
+        &-icon {
+            padding: 4px;
         }
     }
 
