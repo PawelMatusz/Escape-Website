@@ -7,6 +7,7 @@
     color: white;
     padding-top: 10rem;
     padding-bottom: 10rem;
+    margin-top: 1.8rem;
 
     &__container {
 
@@ -41,7 +42,7 @@
 
     &__people {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 
         @include breakpoint(portrait) {
             display: block;
@@ -50,8 +51,8 @@
     }
 
     &__paragraph-second {
-        padding-top: 4em;
-        @include h3;
+        padding-top: 2em;
+        @include h4;
         text-align: center;
 
         @include breakpoint(phablet) {
@@ -63,18 +64,18 @@
 .person {
     margin-top: 7em;
     text-align: center;
+    font-weight: 300;
 
 
     &__name {
-        @include h3;
+        @include h4;
         margin: 0 auto;
-        margin-top: 1.7em;
     }
 
     &__role {
         @include h4;
         margin: 0 auto;
-        margin-top: 1em;
+
     }
 
     &__social-icon {
@@ -83,8 +84,8 @@
     }
 
     &__photo {
-        width: 216px;
-        height: 216px;
+        width: 240px;
+        height: 240px;
         border: 6px solid white;
         border-radius: 50%;
 
