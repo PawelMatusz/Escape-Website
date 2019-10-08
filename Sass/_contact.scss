@@ -1,6 +1,6 @@
 .contact {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 11rem;
+    padding-bottom: 11rem;
     display: flex;
     justify-content: center;
     background-color: $color-blue;
@@ -33,17 +33,12 @@
     }
 
     &__social {
-        padding: 2em;
+        margin-top: 2em;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 5em;
         grid-row-gap: 2em;
-
-        @include breakpoint(portrait) {
-            columns: 1 auto;
-            margin: 0 auto;
-        }
 
         &-item {
             @include h4;
@@ -53,7 +48,8 @@
         }
 
         &-icon {
-            padding: 4px;
+            padding: .5rem;
+            ;
         }
     }
 

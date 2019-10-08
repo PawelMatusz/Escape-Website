@@ -7,7 +7,6 @@
     color: white;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    margin-top: 1.8rem;
 
     &__container {
 
@@ -41,6 +40,8 @@
     }
 
     &__people {
+        max-width: 90rem;
+        margin-top: 5em;
         display: flex;
         justify-content: space-around;
 
@@ -62,14 +63,14 @@
 }
 
 .person {
-    margin-top: 7em;
     text-align: center;
     font-weight: 300;
+    margin-bottom: .5em;
 
 
     &__name {
         @include h4;
-        margin: 0 auto;
+        margin: .8em auto;
     }
 
     &__role {

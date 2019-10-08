@@ -1,10 +1,11 @@
 .skills {
-    width: 470px;
+    min-width: 380px;
     display: flex;
-    align-items: center;
-    margin-top: 2.5rem;
     transition: opacity 300ms 50ms;
-    padding-left: 5rem;
+    margin-bottom: 5rem;
+    align-self: flex-end;
+    justify-content: space-between;
+
 
     @include breakpoint(portrait) {
         width: 320px;
@@ -14,6 +15,7 @@
     &__photo {
         align-self: flex-start;
 
+
         @include breakpoint(phablet) {
             width: 7rem;
         }
@@ -21,10 +23,9 @@
 
 
     &__content {
-        width: 300px;
+        width: 30rem;
         display: flex;
         flex-direction: column;
-        margin-left: 2rem;
         @include h4;
 
     }
@@ -45,11 +46,12 @@
 }
 
 .column {
+    max-width: 860px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    justify-content: space-between;
+    padding-top: 11.5rem;
+    padding-bottom: 10rem;
 }
 
 .skill-hovered {

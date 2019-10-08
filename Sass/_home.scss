@@ -1,6 +1,6 @@
 .home {
     position: relative;
-    min-height: 63rem;
+    min-height: 62rem;
     display: flex;
     background-image: url(../img/Image.png);
     background-position: center;
@@ -30,7 +30,7 @@
 
         .home__head {
             margin-top: 13rem;
-            margin-bottom: 3rem;
+            margin-bottom: 3.5rem;
             @include h3;
             font-weight: 200;
 

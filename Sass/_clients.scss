@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 970px;
+    min-height: 92rem;
     background-color: $color-gray;
-    padding-top: 10rem;
+    padding-top: 5rem;
 
     &__container {
         display: flex;
@@ -12,7 +12,7 @@
     }
 
     &__header {
-        @include h1;
+        @include h2;
         text-align: center;
 
         @include breakpoint(portrait) {
@@ -37,9 +37,7 @@
     &__description {
         position: relative;
         display: flex;
-        align-items: center;
-        margin-top: 5em;
-        margin-bottom: 5em;
+        margin-top: 5.5rem;
 
         @include breakpoint(portrait) {
             flex-direction: column;
@@ -49,12 +47,11 @@
             position: relative;
             display: flex;
             flex-direction: column;
+            align-content: center;
             justify-content: center;
-            align-content: space-between;
-            // align-items: center;
-            padding: 1.8em;
-            margin-left: 2.5em;
-            @include h3;
+            margin-left: 4em;
+            padding: 5rem 5rem 5rem;
+            font-size: 2rem;
             color: $color-gray-font;
             background-color: $color-white;
 
@@ -100,7 +97,7 @@
         }
 
         &-photo {
-            width: 400px;
+            width: 300px;
             height: 200px;
             border-radius: 50%;
             background-color: black;
@@ -113,8 +110,7 @@
         }
 
         &-person {
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 1em;
             color: $color-blue-font;
             @include h4;
         }
@@ -123,13 +119,13 @@
 
     &__footer {
         background-color: $color-white;
+        padding: 4.5rem 0;
 
         &-container {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin: 10px auto;
-            padding: 40px 0;
 
             @include breakpoint(portrait) {
                 flex-wrap: wrap;

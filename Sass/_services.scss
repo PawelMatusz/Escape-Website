@@ -8,9 +8,9 @@
 
 
     &__container {
+        max-width: 860px;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
 
         @include breakpoint(portrait) {
             flex-direction: column;
@@ -20,13 +20,12 @@
     }
 
     &__content {
+        max-width: 600px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         color: $color-gray-font;
         @include h4;
-        padding: 1rem 1rem;
-        margin: 0 2rem;
 
 
         @include breakpoint(portrait) {
