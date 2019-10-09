@@ -5,7 +5,7 @@
     align-items: center;
     background-color: black;
     color: white;
-    padding-top: 10rem;
+    padding-top: 9rem;
     padding-bottom: 10rem;
 
     &__container {
@@ -17,7 +17,7 @@
     }
 
     &__header {
-        @include h1;
+        @include h2;
         margin: 0 auto;
 
         @include breakpoint(portrait) {
@@ -71,6 +71,7 @@
     &__name {
         @include h4;
         margin: .8em auto;
+        font-weight: 500;
     }
 
     &__role {

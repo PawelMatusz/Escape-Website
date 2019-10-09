@@ -1,16 +1,16 @@
 .services {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    align-items: flex-start;
     font-family: $font-family;
 
 
     &__container {
-        max-width: 860px;
+        max-width: 90rem;
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
 
         @include breakpoint(portrait) {
             flex-direction: column;
@@ -20,10 +20,9 @@
     }
 
     &__content {
-        max-width: 600px;
+        max-width: 58rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         color: $color-gray-font;
         @include h4;
 
@@ -36,7 +35,7 @@
         }
 
         &-header {
-            @include h2;
+            font-size: 4.7rem;
             font-weight: 300;
             margin-bottom: 5rem;
             color: $color-black;
