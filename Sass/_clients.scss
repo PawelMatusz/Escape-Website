@@ -4,16 +4,21 @@
     justify-content: space-between;
     min-height: 92rem;
     background-color: $color-gray;
-    padding-top: 5rem;
+    padding-top: 9rem;
+
+
 
     &__container {
         display: flex;
         flex-direction: column;
+
+
     }
 
     &__header {
         @include h2;
         text-align: center;
+        margin-bottom: 1.6rem;
 
         @include breakpoint(portrait) {
             text-align: center;
@@ -37,28 +42,35 @@
     &__description {
         position: relative;
         display: flex;
-        margin-top: 5.5rem;
+        flex: none;
+        align-items: center;
+        margin-top: 4.5rem;
+
+        &:nth-child(even) {
+            justify-content: flex-end;
+        }
+
+        &>:not(:last-child) {
+            margin-right: 5rem;
+        }
 
         @include breakpoint(portrait) {
             flex-direction: column;
         }
 
         &-content {
+            max-width: 64rem;
             position: relative;
             display: flex;
             flex-direction: column;
-            align-content: center;
-            justify-content: center;
-            margin-left: 4em;
-            padding: 5rem 5rem 5rem;
+            padding-top: 2.5rem;
+            padding-left: 6rem;
+            padding-bottom: 5.5rem;
+            padding-right: 6rem;
             font-size: 2rem;
             color: $color-gray-font;
             background-color: $color-white;
 
-            &:nth-child(odd) {
-                margin-left: 0;
-                margin-right: 2.5em;
-            }
 
 
             &:nth-child(even)::before {
@@ -97,10 +109,12 @@
         }
 
         &-photo {
-            width: 300px;
-            height: 200px;
+            width: 220px;
+            height: 220px;
             border-radius: 50%;
             background-color: black;
+            flex: none;
+            align-self: flex-end;
 
             &:nth-child(even) {
                 @include breakpoint(portrait) {
@@ -110,22 +124,30 @@
         }
 
         &-person {
-            padding-top: 1em;
+            padding-top: .7em;
             color: $color-blue-font;
             @include h4;
+            padding-left: 3rem;
+        }
+
+        &-paragraph {
+            padding-left: 3rem;
+            padding-top: 3rem;
         }
 
     }
 
     &__footer {
         background-color: $color-white;
-        padding: 4.5rem 0;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        margin-top: 11rem;
 
         &-container {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin: 10px auto;
+            margin: 0 auto;
 
             @include breakpoint(portrait) {
                 flex-wrap: wrap;

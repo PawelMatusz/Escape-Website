@@ -9,8 +9,11 @@
     &__container {
         max-width: 90rem;
         display: flex;
-        justify-content: space-between;
         align-items: flex-start;
+
+        &>:not(:last-child) {
+            margin-right: 5rem;
+        }
 
         @include breakpoint(portrait) {
             flex-direction: column;

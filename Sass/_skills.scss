@@ -2,10 +2,9 @@
     min-width: 380px;
     display: flex;
     transition: opacity 300ms 50ms;
-    margin-bottom: 5rem;
     align-self: flex-end;
     justify-content: space-between;
-
+    margin-bottom: 4.5rem;
 
     @include breakpoint(portrait) {
         width: 320px;
@@ -51,7 +50,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 11.5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 6rem;
 }
 
 .skill-hovered {
