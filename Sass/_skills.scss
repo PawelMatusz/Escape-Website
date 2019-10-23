@@ -1,5 +1,5 @@
 .skills {
-    min-width: 380px;
+    min-width: 37rem;
     display: flex;
     transition: opacity 300ms 50ms;
     align-self: flex-end;
@@ -13,6 +13,7 @@
 
     &__photo {
         align-self: flex-start;
+        margin-right: 1rem;
 
 
         @include breakpoint(phablet) {
@@ -25,7 +26,7 @@
         width: 30rem;
         display: flex;
         flex-direction: column;
-        @include h4;
+        @include h5;
 
     }
 
@@ -49,8 +50,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 11.5rem;
-    padding-bottom: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .skill-hovered {

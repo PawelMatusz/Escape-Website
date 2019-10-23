@@ -2,7 +2,7 @@
     &__list {
         min-width: 400px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         color: $color-white;
         @include h4;
 

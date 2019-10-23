@@ -32,14 +32,12 @@
     align-items: center;
     justify-content: center;
     min-width: 240px;
-    min-height: 64px;
-    padding: .65em;
+    padding: 1em;
     color: $color-white;
     background-color: transparent;
     border: 2px solid $color-white;
-    margin-top: 8rem;
     margin-bottom: 3rem;
-    @include h3;
+    @include h4;
     border-radius: .3rem;
     cursor: pointer;
     transition: .2s;
@@ -52,12 +50,10 @@
 
     @include breakpoint(portrait) {
         min-width: 310px;
-        min-height: 90px;
     }
 
     @include breakpoint(phablet) {
         min-width: 220px;
-        min-height: 40px;
     }
 }
 

@@ -16,7 +16,6 @@
     &__logo {
         @include breakpoint(phablet) {
             width: 20rem;
-            margin-left: 2rem;
         }
     }
 }

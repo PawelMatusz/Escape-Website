@@ -1,13 +1,13 @@
 .services {
     display: flex;
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     align-items: flex-start;
     font-family: $font-family;
 
 
     &__container {
-        max-width: 90rem;
+        max-width: 88rem;
         display: flex;
         align-items: flex-start;
 
@@ -27,7 +27,7 @@
         display: flex;
         flex-direction: column;
         color: $color-gray-font;
-        @include h4;
+        @include h5;
 
 
         @include breakpoint(portrait) {
@@ -38,7 +38,7 @@
         }
 
         &-header {
-            font-size: 4.7rem;
+            @include h2;
             font-weight: 300;
             margin-bottom: 5rem;
             color: $color-black;

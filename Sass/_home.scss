@@ -29,8 +29,8 @@
 
 
         .home__head {
-            margin-top: 13rem;
-            margin-bottom: 3.5rem;
+            margin-top: 13.5rem;
+            margin-bottom: 2rem;
             @include h3;
             font-weight: 200;
 
@@ -42,6 +42,7 @@
                 @include h1;
                 font-weight: 600;
                 text-transform: uppercase;
+                margin-bottom: 5.5rem;
 
                 @include breakpoint(portrait) {
                     @include h2;

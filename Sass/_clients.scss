@@ -3,14 +3,15 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 92rem;
+    padding-top: 4.5rem;
     background-color: $color-gray;
-    padding-top: 9rem;
 
 
 
     &__container {
         display: flex;
         flex-direction: column;
+        padding-bottom: 4.5rem;
 
 
     }
@@ -18,7 +19,6 @@
     &__header {
         @include h2;
         text-align: center;
-        margin-bottom: 1.6rem;
 
         @include breakpoint(portrait) {
             text-align: center;
@@ -33,6 +33,7 @@
         @include h4;
         text-align: center;
         color: $color-gray-font;
+        margin-bottom: 4rem;
 
         @include breakpoint(portrait) {
             text-align: center;
@@ -44,7 +45,7 @@
         display: flex;
         flex: none;
         align-items: center;
-        margin-top: 4.5rem;
+        margin-bottom: 4rem;
 
         &:nth-child(even) {
             justify-content: flex-end;
@@ -63,11 +64,11 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            padding-top: 2.5rem;
-            padding-left: 6rem;
+            padding-top: 5.5rem;
+            padding-left: 9rem;
             padding-bottom: 5.5rem;
             padding-right: 6rem;
-            font-size: 2rem;
+            @include h4;
             color: $color-gray-font;
             background-color: $color-white;
 
@@ -114,7 +115,10 @@
             border-radius: 50%;
             background-color: black;
             flex: none;
-            align-self: flex-end;
+
+            @include breakpoint(portrait) {
+                margin-bottom: 2rem;
+            }
 
             &:nth-child(even) {
                 @include breakpoint(portrait) {
@@ -124,24 +128,22 @@
         }
 
         &-person {
-            padding-top: .7em;
             color: $color-blue-font;
             @include h4;
-            padding-left: 3rem;
+            margin-left: 3rem;
         }
 
         &-paragraph {
-            padding-left: 3rem;
-            padding-top: 3rem;
+
+            margin-bottom: .7em;
         }
 
     }
 
     &__footer {
         background-color: $color-white;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        margin-top: 11rem;
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
 
         &-container {
             display: flex;
