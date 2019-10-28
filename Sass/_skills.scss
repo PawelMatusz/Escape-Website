@@ -1,19 +1,16 @@
 .skills {
-    min-width: 37rem;
     display: flex;
     transition: opacity 300ms 50ms;
-    align-self: flex-end;
-    justify-content: space-between;
     margin-bottom: 4.5rem;
 
     @include breakpoint(portrait) {
-        width: 320px;
+        width: 32rem;
         margin-left: 1.5rem;
     }
 
     &__photo {
         align-self: flex-start;
-        margin-right: 1rem;
+        margin-right: 1.7rem;
 
 
         @include breakpoint(phablet) {
@@ -23,17 +20,18 @@
 
 
     &__content {
-        width: 30rem;
+        max-width: 29rem;
         display: flex;
         flex-direction: column;
-        @include h5;
+        font-size: 1.4rem;
+        line-height: 1.6;
 
     }
 
     &__header {
         font-weight: bold;
         margin-bottom: .5rem;
-        @include h4;
+        font-size: 1.9rem;
     }
 
     &__paragraph {
@@ -46,7 +44,7 @@
 }
 
 .column {
-    max-width: 860px;
+    max-width: 86rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

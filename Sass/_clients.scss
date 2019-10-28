@@ -17,8 +17,10 @@
     }
 
     &__header {
-        @include h2;
+        font-size: 5.7rem;
+        line-height: 1;
         text-align: center;
+        margin-bottom: 2rem;
 
         @include breakpoint(portrait) {
             text-align: center;
@@ -30,7 +32,7 @@
     }
 
     &__paragraph {
-        @include h4;
+        font-size: 1.8rem;
         text-align: center;
         color: $color-gray-font;
         margin-bottom: 4rem;

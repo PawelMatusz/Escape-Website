@@ -18,9 +18,10 @@
     }
 
     &__header {
-        @include h2;
+        font-size: 5.7rem;
+        line-height: 1;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
 
         @include breakpoint(portrait) {
             text-align: center;
@@ -28,10 +29,10 @@
     }
 
     &__paragraph-first {
-        @include h4;
+        font-size: 1.8rem;
         color: $color-gray-font;
         text-align: center;
-        margin-bottom: 7rem;
+        margin-bottom: 7.8rem;
 
         @include breakpoint(portrait) {
             text-align: center;
@@ -42,7 +43,7 @@
         max-width: 90rem;
         display: flex;
         justify-content: space-around;
-        margin-bottom: 3.5rem;
+        margin-bottom: 3.2rem;
 
         @include breakpoint(portrait) {
             display: block;
@@ -51,7 +52,8 @@
     }
 
     &__paragraph-second {
-        @include h4;
+        font-size: 1.5rem;
+        line-height: 1.7;
         text-align: center;
 
         @include breakpoint(phablet) {
@@ -89,7 +91,7 @@
         height: 230px;
         border: 6px solid white;
         border-radius: 50%;
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
         ;
 
         @include breakpoint(portrait) {
