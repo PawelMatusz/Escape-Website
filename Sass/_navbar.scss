@@ -52,6 +52,7 @@
 
     @include breakpoint(portrait) {
         display: block;
+        margin-right: 0;
     }
 }
 

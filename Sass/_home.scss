@@ -6,6 +6,10 @@
     background-position: center;
     background-size: cover;
 
+    @include breakpoint(portrait) {
+        min-height: 100vh;
+    }
+
     &::before {
         content: '';
         position: absolute;

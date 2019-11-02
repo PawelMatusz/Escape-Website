@@ -55,6 +55,10 @@
 
         &>:not(:last-child) {
             margin-right: 5rem;
+
+            @include breakpoint(portrait) {
+                margin-right: 0;
+            }
         }
 
         @include breakpoint(portrait) {

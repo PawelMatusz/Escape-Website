@@ -57,7 +57,7 @@
         text-align: center;
 
         @include breakpoint(phablet) {
-            @include h3;
+            @include h4;
         }
     }
 }

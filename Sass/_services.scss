@@ -12,6 +12,10 @@
 
         &>:not(:last-child) {
             margin-right: 6rem;
+
+            @include breakpoint(portrait) {
+                margin-right: 0;
+            }
         }
 
         @include breakpoint(portrait) {
@@ -48,11 +52,10 @@
 
             @include breakpoint(portrait) {
                 text-align: center;
-                padding: 1rem;
-            }
+                // padding: 1rem;
+                font-size: 4.7rem;
+                line-height: 1.4;
 
-            @include breakpoint(phablet) {
-                @include h2;
             }
         }
 
