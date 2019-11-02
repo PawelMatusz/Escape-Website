@@ -66,8 +66,8 @@
     text-align: center;
     font-weight: 300;
 
-    @include breakpoint(phablet) {
-        margin-bottom: 3rem;
+    @include breakpoint(portrait) {
+        margin-bottom: 5rem;
     }
 
 
@@ -96,12 +96,6 @@
 
         @include breakpoint(portrait) {
             margin: .5rem auto;
-        }
-
-        @include breakpoint(portrait) {
-            width: 120px;
-            height: 120px;
-
         }
     }
 }

@@ -5,7 +5,6 @@
 
     @include breakpoint(portrait) {
         width: 32rem;
-        margin-left: 1.5rem;
     }
 
     &__photo {
@@ -50,6 +49,10 @@
     justify-content: space-between;
     padding-top: 10rem;
     padding-bottom: 10rem;
+
+    @include breakpoint(portrait) {
+        justify-content: center;
+    }
 }
 
 .skill-hovered {
