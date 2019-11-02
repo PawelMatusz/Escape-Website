@@ -4,11 +4,6 @@ html {
     font-family: $font-family;
     overflow-x: hidden;
     width: 100%;
-
-    @include breakpoint(portrait) {
-        font-size: 15px;
-    }
-
 }
 
 :root,
