@@ -20,7 +20,7 @@
         font-size: 5.7rem;
         line-height: 1;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
 
         @include breakpoint(portrait) {
             text-align: center;
@@ -35,7 +35,7 @@
         font-size: 1.8rem;
         text-align: center;
         color: $color-gray-font;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
 
         @include breakpoint(portrait) {
             text-align: center;
@@ -70,11 +70,12 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            padding-top: 5.5rem;
-            padding-left: 9rem;
-            padding-bottom: 5.5rem;
+            padding-top: 5rem;
+            padding-left: 8rem;
+            padding-bottom: 5rem;
             padding-right: 6rem;
-            @include h4;
+            font-size: 2rem;
+            line-height: 1.5;
             color: $color-gray-font;
             background-color: $color-white;
 
@@ -121,6 +122,11 @@
             border-radius: 50%;
             background-color: black;
             flex: none;
+            overflow: hidden;
+            background-position: center;
+            background-repeat: none;
+            background-size: cover;
+            ;
 
             @include breakpoint(portrait) {
                 margin-bottom: 2rem;
@@ -135,8 +141,8 @@
 
         &-person {
             color: $color-blue-font;
-            @include h4;
-            margin-left: 3rem;
+            font-size: 1.8rem;
+            margin-left: 1rem;
         }
 
         &-paragraph {

@@ -39,6 +39,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+
+}
+
 h1,
 h2,
 h3,
@@ -48,25 +53,10 @@ h6 {
     font-weight: 200;
 }
 
-.bold {
-    font-weight: 600;
-}
-
-.grey {
-    background-color: #FAFAFA;
-}
-
 .link {
     transition: .2s;
-}
 
-.link:hover {
-    opacity: .5;
-}
-
-.logo {
-    @include breakpoint(portrait) {
-        width: 50%;
-        margin-left: 1em;
+    &:hover {
+        opacity: .5;
     }
 }

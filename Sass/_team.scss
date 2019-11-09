@@ -92,7 +92,7 @@
         border: 6px solid white;
         border-radius: 50%;
         margin-bottom: 1.2rem;
-        ;
+        overflow: hidden;
 
         @include breakpoint(portrait) {
             margin: .5rem auto;
