@@ -17,7 +17,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
 
@@ -40,7 +40,7 @@
             font-weight: 200;
 
             @include breakpoint(portrait) {
-                @include h4;
+                font-size: 1.5rem;
             }
 
             &--big {
@@ -52,7 +52,7 @@
 
 
                 @include breakpoint(portrait) {
-                    @include h2;
+                    font-size: 4rem;
                 }
             }
         }

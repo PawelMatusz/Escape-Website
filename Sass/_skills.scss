@@ -3,18 +3,29 @@
     transition: opacity 300ms 50ms;
     margin-bottom: 4.5rem;
 
+
     @include breakpoint(portrait) {
-        width: 32rem;
+        width: 34rem;
+
+        &:nth-child(odd) {
+            margin-right: 2rem;
+        }
     }
+
+    @include breakpoint(phablet) {
+        &:nth-child(odd) {
+            margin-right: 0;
+        }
+    }
+
+
 
     &__photo {
         align-self: flex-start;
         margin-right: 1.7rem;
 
 
-        @include breakpoint(phablet) {
-            width: 7rem;
-        }
+
     }
 
 
@@ -53,6 +64,8 @@
     @include breakpoint(portrait) {
         justify-content: center;
     }
+
+
 }
 
 .skill-hovered {

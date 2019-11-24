@@ -26,6 +26,10 @@
         @include breakpoint(portrait) {
             text-align: center;
         }
+
+        @include breakpoint(phablet) {
+            font-size: 4.5rem;
+        }
     }
 
     &__paragraph-first {
