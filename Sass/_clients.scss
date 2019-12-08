@@ -79,6 +79,13 @@
             color: $color-gray-font;
             background-color: $color-white;
 
+            @include breakpoint(phablet) {
+                padding-top: 2rem;
+                padding-left: 4rem;
+                padding-bottom: 2rem;
+                padding-right: 3rem;
+            }
+
 
 
             &:nth-child(even)::before {
@@ -177,6 +184,10 @@
 
             @include breakpoint(mobile) {
                 width: 100%;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
             }
         }
 

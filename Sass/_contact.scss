@@ -35,6 +35,10 @@
     grid-column-gap: 5em;
     grid-row-gap: 2em;
 
+    @include breakpoint(mobile) {
+      display: block;
+    }
+
     &-item {
       @include h4;
       padding: 0.8em;
