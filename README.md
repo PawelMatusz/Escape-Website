@@ -15,3 +15,6 @@ Project with the use PSD template
 * HTML5
 * CSS3 (SCSS)
 * JavaScript
+
+## DEMO
+https://determined-mahavira-a16418.netlify.com/
