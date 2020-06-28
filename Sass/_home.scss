@@ -28,7 +28,7 @@
     font-weight: 200;
     transform: translateX(-20%);
     opacity: 0;
-    transition: opacity 0.3s linear, transform 0.3s linear;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     &.is-loaded {
       transform: translateX(0);
       opacity: 1;
@@ -46,7 +46,7 @@
       font-family: 'Open Sans', sans-serif;
       transform: translateX(20%);
       opacity: 0;
-      transition: opacity 0.3s linear, transform 0.3s linear;
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
       &.is-loaded {
         transform: translateX(0);
         opacity: 1;
@@ -63,7 +63,7 @@
     margin-right: auto;
     transform: translateY(40%);
     opacity: 0;
-    transition: opacity 0.3s linear, transform 0.3s linear;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     &.is-loaded {
       transform: translateX(0);
       opacity: 1;
