@@ -1,7 +1,13 @@
-const skills = document.querySelectorAll('.skills');
-const menuIcon = document.querySelector('.nav__icon');
-const navbar = document.querySelector('.navbar--mobile');
-const menuItem = document.querySelectorAll('.navbar__item--mobile ');
+const skills = document.querySelectorAll('.skills'),
+  menuIcon = document.querySelector('.nav__icon'),
+  navbar = document.querySelector('.navbar--mobile'),
+  menuItem = document.querySelectorAll('.navbar__item--mobile '),
+  headerLogo = document.querySelector('.header__logo'),
+  headerNav = document.querySelector('.navbar__list'),
+  home = document.querySelector('.home'),
+  homeButton = document.querySelector('.home__button'),
+  homeHeader = document.querySelector('.home__head'),
+  homeHeaderBig = document.querySelector('.home__head-big');
 
 skills.forEach(function(skill) {
   skill.addEventListener('mouseover', function() {
@@ -28,3 +34,14 @@ menuItem.forEach(function(item) {
     menuIcon.classList.remove('open');
   });
 });
+
+const animation = () => {
+  setTimeout(() => {
+    headerLogo.classList.add('is-loaded');
+    homeButton.classList.add('is-loaded');
+    homeHeader.classList.add('is-loaded');
+    homeHeaderBig.classList.add('is-loaded');
+    headerNav.classList.add('is-loaded');
+  }, 600);
+};
+animation();

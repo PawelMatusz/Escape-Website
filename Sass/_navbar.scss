@@ -1,101 +1,104 @@
 .navbar {
-    &__list {
-        min-width: 370px;
-        display: flex;
-        justify-content: space-between;
-        color: $color-white;
-        @include h4;
+  &__list {
+    min-width: 370px;
+    display: flex;
+    justify-content: space-between;
+    color: $color-white;
+    @include h4;
+    transform: translateY(-40%);
+    opacity: 0;
+    transition: opacity 0.3s linear, transform 0.3s linear;
 
-        @include breakpoint(portrait) {
-            display: none;
-        }
-
-        &--mobile {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            @include h1;
-
-        }
-
+    @include breakpoint(portrait) {
+      display: none;
     }
 
     &--mobile {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: -50px;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        display: none;
-        color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      @include h1;
     }
+    &.is-loaded {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
-    &__item--mobile {
-        padding-top: 25px;
-    }
+  &--mobile {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    color: white;
+  }
+
+  &__item--mobile {
+    padding-top: 25px;
+  }
 }
 
 .nav__icon {
-    overflow: hidden;
-    display: none;
-    width: 40px;
-    height: 35px;
-    margin-right: 1em;
-    position: relative;
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
-    cursor: pointer;
-    z-index: 999;
+  overflow: hidden;
+  display: none;
+  width: 40px;
+  height: 35px;
+  margin-right: 1em;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 999;
 
-    @include breakpoint(portrait) {
-        display: block;
-        margin-right: 0;
-    }
+  @include breakpoint(portrait) {
+    display: block;
+    margin-right: 0;
+  }
 }
 
 .nav__item {
-    display: block;
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    background: $color-white;
-    border-radius: 9px;
-    opacity: 1;
-    right: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: $color-white;
+  border-radius: 9px;
+  opacity: 1;
+  right: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
 
-    &:nth-child(1) {
-        top: 0px;
-    }
+  &:nth-child(1) {
+    top: 0px;
+  }
 
-    &:nth-child(2) {
-        top: 10px;
-    }
+  &:nth-child(2) {
+    top: 10px;
+  }
 
-    &:nth-child(3) {
-        top: 20px;
-    }
+  &:nth-child(3) {
+    top: 20px;
+  }
 }
 
-
-
 .nav__icon.open {
-    & .nav__item:nth-child(1) {
-        top: 18px;
-        transform: rotate(135deg);
-    }
+  & .nav__item:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+  }
 
-    & .nav__item:nth-child(2) {
-        opacity: 0;
-        left: -60px;
-    }
+  & .nav__item:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
 
-    & .nav__item:nth-child(3) {
-        top: 18px;
-        transform: rotate(-135deg);
-    }
+  & .nav__item:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+  }
 }
