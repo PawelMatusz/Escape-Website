@@ -7,9 +7,11 @@ const skills = document.querySelectorAll('.skills'),
   home = document.querySelector('.home'),
   homeButton = document.querySelector('.home__button'),
   homeHeader = document.querySelector('.home__head'),
-  homeHeaderBig = document.querySelector('.home__head-big');
+  homeHeaderBig = document.querySelector('.home__head-big'),
+  sectionsServicesContent = document.querySelectorAll('.services__content'),
+  sectionsServicesPhoto = document.querySelectorAll('.services__photo');
 
-skills.forEach(function(skill) {
+skills.forEach(skill => {
   skill.addEventListener('mouseover', function() {
     skills.forEach(item => item.classList.add('is-opacified'));
     this.classList.remove('is-opacified');
@@ -19,7 +21,7 @@ skills.forEach(function(skill) {
   });
 });
 
-menuIcon.addEventListener('click', function() {
+menuIcon.addEventListener('click', () => {
   this.classList.toggle('open');
   if (this.classList.contains('open')) {
     navbar.style.display = 'block';
@@ -28,14 +30,14 @@ menuIcon.addEventListener('click', function() {
   }
 });
 
-menuItem.forEach(function(item) {
+menuItem.forEach(item => {
   item.addEventListener('click', () => {
     navbar.style.display = 'none';
     menuIcon.classList.remove('open');
   });
 });
 
-const animation = () => {
+const loader = () => {
   setTimeout(() => {
     headerLogo.classList.add('is-loaded');
     homeButton.classList.add('is-loaded');
@@ -44,4 +46,24 @@ const animation = () => {
     headerNav.classList.add('is-loaded');
   }, 600);
 };
-animation();
+loader();
+
+const scroller = () => {
+  sectionsServicesContent.forEach(section => {
+    const y = section.offsetTop / 2;
+    if (window.scrollY > y) {
+      section.classList.add('is-scroll');
+    } else {
+      section.classList.remove('is-scroll');
+    }
+  });
+  sectionsServicesPhoto.forEach(section => {
+    const y = section.offsetTop / 2;
+    if (window.scrollY > y) {
+      section.classList.add('is-scroll');
+    } else {
+      section.classList.remove('is-scroll');
+    }
+  });
+};
+window.addEventListener('scroll', scroller);

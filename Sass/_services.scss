@@ -1,76 +1,92 @@
 .services {
+  display: flex;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  font-family: $font-family;
+
+  &__container {
+    max-width: 88rem;
     display: flex;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    font-family: $font-family;
+    align-items: center;
 
+    & > :not(:last-child) {
+      margin-right: 6rem;
 
-    &__container {
-        max-width: 88rem;
-        display: flex;
-        align-items: center;
-
-        &>:not(:last-child) {
-            margin-right: 6rem;
-
-            @include breakpoint(portrait) {
-                margin-right: 0;
-            }
-        }
-
-        @include breakpoint(portrait) {
-            flex-direction: column;
-            margin-bottom: 1rem;
-        }
-
+      @include breakpoint(portrait) {
+        margin-right: 0;
+      }
     }
 
-    &__content {
-        max-width: 58rem;
-        display: flex;
-        flex-direction: column;
-        color: $color-gray-font;
-        font-size: 1.5rem;
-        line-height: 1.55;
-        font-weight: 300;
+    @include breakpoint(portrait) {
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+  }
 
-
-        @include breakpoint(portrait) {
-            order: -1;
-            width: 100%;
-            margin-bottom: 2rem;
-
-        }
-
-        &-header {
-
-            font-size: 5.7rem;
-            line-height: 0.9;
-            font-weight: 300;
-            margin-bottom: 3.8rem;
-            color: $color-black;
-
-            @include breakpoint(portrait) {
-                text-align: center;
-                font-size: 3rem;
-                line-height: 1.4;
-
-            }
-        }
-
-        &-paragraph {
-            &:not(:last-child) {
-                margin-bottom: 2.4em;
-            }
-        }
-
-        &-photo {
-            flex: none;
-        }
-
+  &__content {
+    max-width: 58rem;
+    display: flex;
+    flex-direction: column;
+    color: $color-gray-font;
+    font-size: 1.5rem;
+    line-height: 1.55;
+    font-weight: 300;
+    transform: translateX(-15%);
+    opacity: 0;
+    transition: opacity 0.3s linear, transform 0.3s linear;
+    &.is-scroll {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    @include breakpoint(portrait) {
+      order: -1;
+      width: 100%;
+      margin-bottom: 2rem;
     }
 
-    &--even {
-        background-color: $color-gray;
+    &-header {
+      font-size: 5.7rem;
+      line-height: 0.9;
+      font-weight: 300;
+      margin-bottom: 3.8rem;
+      color: $color-black;
+
+      @include breakpoint(portrait) {
+        text-align: center;
+        font-size: 3rem;
+        line-height: 1.4;
+      }
     }
+
+    &-paragraph {
+      &:not(:last-child) {
+        margin-bottom: 2.4em;
+      }
+    }
+
+    &-photo {
+      flex: none;
+    }
+  }
+
+  &--even {
+    background-color: $color-gray;
+    .services__content {
+      transform: translateX(15%);
+      opacity: 0;
+      &.is-scroll {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
+  &__photo {
+    transform: translateY(-15%);
+    opacity: 0;
+    transition: opacity 0.3s linear, transform 0.3s linear;
+    &.is-scroll {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
