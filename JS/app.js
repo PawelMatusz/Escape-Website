@@ -37,17 +37,6 @@ menuItem.forEach(item => {
   });
 });
 
-const loader = () => {
-  setTimeout(() => {
-    headerLogo.classList.add('is-loaded');
-    homeButton.classList.add('is-loaded');
-    homeHeader.classList.add('is-loaded');
-    homeHeaderBig.classList.add('is-loaded');
-    headerNav.classList.add('is-loaded');
-  }, 600);
-};
-loader();
-
 const scroller = () => {
   sectionsServicesContent.forEach(section => {
     const y = section.offsetTop / 2;
@@ -67,3 +56,10 @@ const scroller = () => {
   });
 };
 window.addEventListener('scroll', scroller);
+window.addEventListener('load', () => {
+  headerLogo.classList.add('is-loaded');
+  homeButton.classList.add('is-loaded');
+  homeHeader.classList.add('is-loaded');
+  homeHeaderBig.classList.add('is-loaded');
+  headerNav.classList.add('is-loaded');
+});
