@@ -21,14 +21,14 @@ skills.forEach(skill => {
   });
 });
 
-menuIcon.addEventListener('click', () => {
+const openMenu = function() {
   this.classList.toggle('open');
   if (this.classList.contains('open')) {
     navbar.style.display = 'block';
   } else {
     navbar.style.display = 'none';
   }
-});
+};
 
 menuItem.forEach(item => {
   item.addEventListener('click', () => {
@@ -55,6 +55,8 @@ const scroller = () => {
     }
   });
 };
+
+menuIcon.addEventListener('click', openMenu);
 window.addEventListener('scroll', scroller);
 window.addEventListener('load', () => {
   headerLogo.classList.add('is-loaded');
