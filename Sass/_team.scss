@@ -68,11 +68,11 @@
   text-align: center;
   font-weight: 300;
   opacity: 0;
-  transform: translate(30%);
+  transform: translateY(30%);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
   &.is-scroll {
     opacity: 1;
-    transform: translate(0);
+    transform: translateY(0);
   }
 
   @include breakpoint(portrait) {
