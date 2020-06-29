@@ -8,8 +8,7 @@ const skills = document.querySelectorAll('.skills'),
   homeButton = document.querySelector('.home__button'),
   homeHeader = document.querySelector('.home__head'),
   homeHeaderBig = document.querySelector('.home__head-big'),
-  sectionsServicesContent = document.querySelectorAll('.services__content'),
-  sectionsServicesPhoto = document.querySelectorAll('.services__photo');
+  scrollTriggerElements = document.querySelectorAll('[data-scroll]');
 
 skills.forEach(skill => {
   skill.addEventListener('mouseover', function() {
@@ -38,20 +37,12 @@ menuItem.forEach(item => {
 });
 
 const scroller = () => {
-  sectionsServicesContent.forEach(section => {
-    const y = section.offsetTop / 2;
-    if (window.scrollY > y) {
-      section.classList.add('is-scroll');
+  scrollTriggerElements.forEach(element => {
+    const elementOffsetTop = element.clientHeight + element.offsetTop / 4;
+    if (window.scrollY > elementOffsetTop) {
+      element.classList.add('is-scroll');
     } else {
-      section.classList.remove('is-scroll');
-    }
-  });
-  sectionsServicesPhoto.forEach(section => {
-    const y = section.offsetTop / 2;
-    if (window.scrollY > y) {
-      section.classList.add('is-scroll');
-    } else {
-      section.classList.remove('is-scroll');
+      element.classList.remove('is-scroll');
     }
   });
 };
