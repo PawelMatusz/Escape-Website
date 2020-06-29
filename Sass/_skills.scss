@@ -53,11 +53,11 @@
   padding-top: 10rem;
   padding-bottom: 10rem;
   opacity: 0;
-  transform: scaleX(0.5);
+  transform: translateX(-30%);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
   &.is-scroll {
     opacity: 1;
-    transform: scaleX(1);
+    transform: translateX(0);
   }
 
   @include breakpoint(portrait) {

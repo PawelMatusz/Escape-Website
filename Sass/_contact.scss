@@ -35,11 +35,11 @@
     grid-column-gap: 5em;
     grid-row-gap: 2em;
     opacity: 0;
-    transform: scaleY(0);
+    transform: translateX(30%);
     transition: opacity 0.3s ease-out, transform 0.3s ease-out;
     &.is-scroll {
       opacity: 1;
-      transform: scaleY(1);
+      transform: translateX(0);
     }
 
     @include breakpoint(mobile) {
