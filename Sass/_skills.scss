@@ -2,6 +2,13 @@
   display: flex;
   transition: opacity 300ms 50ms;
   margin-bottom: 4.5rem;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  &.is-scroll {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   @include breakpoint(portrait) {
     width: 34rem;
@@ -52,13 +59,6 @@
   justify-content: space-between;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  opacity: 0;
-  transform: translateY(30%);
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-  &.is-scroll {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
   @include breakpoint(portrait) {
     justify-content: center;

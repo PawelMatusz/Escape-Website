@@ -59,4 +59,5 @@ window.addEventListener('load', () => {
   homeHeader.classList.add('is-loaded');
   homeHeaderBig.classList.add('is-loaded');
   headerNav.classList.add('is-loaded');
+  menuIcon.classList.add('is-loaded');
 });
