@@ -1,74 +1,71 @@
 .skills {
+  display: flex;
+  transition: opacity 300ms 50ms;
+  margin-bottom: 4.5rem;
+
+  @include breakpoint(portrait) {
+    width: 34rem;
+
+    &:nth-child(odd) {
+      margin-right: 2rem;
+    }
+  }
+
+  @include breakpoint(phablet) {
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+
+  &__photo {
+    align-self: flex-start;
+    margin-right: 1.7rem;
+  }
+
+  &__content {
+    max-width: 29rem;
     display: flex;
-    transition: opacity 300ms 50ms;
-    margin-bottom: 4.5rem;
+    flex-direction: column;
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
 
+  &__header {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.9rem;
+  }
 
-    @include breakpoint(portrait) {
-        width: 34rem;
+  &__paragraph {
+    color: $color-gray-font;
+  }
 
-        &:nth-child(odd) {
-            margin-right: 2rem;
-        }
-    }
-
-    @include breakpoint(phablet) {
-        &:nth-child(odd) {
-            margin-right: 0;
-        }
-    }
-
-
-
-    &__photo {
-        align-self: flex-start;
-        margin-right: 1.7rem;
-
-
-
-    }
-
-
-    &__content {
-        max-width: 29rem;
-        display: flex;
-        flex-direction: column;
-        font-size: 1.4rem;
-        line-height: 1.6;
-
-    }
-
-    &__header {
-        font-weight: bold;
-        margin-bottom: .5rem;
-        font-size: 1.9rem;
-    }
-
-    &__paragraph {
-        color: $color-gray-font;
-    }
-
-    &.is-opacified {
-        opacity: .25;
-    }
+  &.is-opacified {
+    opacity: 0.25;
+  }
 }
 
 .column {
-    max-width: 86rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+  max-width: 86rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  opacity: 0;
+  transform: scaleX(0.5);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  &.is-scroll {
+    opacity: 1;
+    transform: scaleX(1);
+  }
 
-    @include breakpoint(portrait) {
-        justify-content: center;
-    }
-
-
+  @include breakpoint(portrait) {
+    justify-content: center;
+  }
 }
 
 .skill-hovered {
-    opacity: 1;
-    transform: scale(1.05)
+  opacity: 1;
+  transform: scale(1.05);
 }
