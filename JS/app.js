@@ -38,7 +38,11 @@ menuItem.forEach(item => {
 
 const scroller = () => {
   scrollTriggerElements.forEach(element => {
-    const elementOffsetTop = element.clientHeight + element.offsetTop / 4;
+    const elementOffsetTop =
+      element.offsetTop + element.clientHeight - window.innerHeight;
+
+    console.table(elementOffsetTop);
+
     if (window.scrollY > elementOffsetTop) {
       element.classList.add('is-scroll');
     } else {
