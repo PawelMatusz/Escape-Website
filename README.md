@@ -4,6 +4,8 @@
 
 - [General info](#general-info)
 - [Technologies](#technologies)
+- [Live](#live)
+- [Inspiration](#inspiration)
 
 ## General info
 
@@ -15,7 +17,7 @@ Project with the use PSD template
 - CSS3 (SCSS)
 - JavaScript
 
-## DEMO
+## Live
 
 https://determined-mahavira-a16418.netlify.com/
 
