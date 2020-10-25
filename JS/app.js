@@ -40,9 +40,6 @@ const scroller = () => {
   scrollTriggerElements.forEach(element => {
     const elementOffsetTop =
       element.offsetTop + element.clientHeight - window.innerHeight;
-
-    console.table(elementOffsetTop);
-
     if (window.scrollY > elementOffsetTop) {
       element.classList.add('is-scroll');
     } else {
